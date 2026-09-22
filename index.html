@@ -76,14 +76,14 @@
         <div class="container family-grid">
           <article class="card family-card">
             <p class="family-card__label">Nhà trai</p>
-            <h5>Ông Nguyễn Văn Tuấn</h5>
-            <h5>Bà Bùi Thị Hoa</h5>
+            <p class="family-card__member"><span>Ông</span><strong>Nguyễn Văn Tuấn</strong></p>
+            <p class="family-card__member"><span>Bà</span><strong>Bùi Thị Hoan</strong></p>
           </article>
 
           <article class="card family-card">
             <p class="family-card__label">Nhà gái</p>
-            <h5>Ông Nguyễn Văn Thương</h5>
-            <h5>Bà Dương Thị Luyến</h5>
+            <p class="family-card__member"><span>Ông</span><strong>Nguyễn Văn Thương</strong></p>
+            <p class="family-card__member"><span>Bà</span><strong>Dương Thị Luyến</strong></p>
           </article>
         </div>
       </section>
@@ -130,15 +130,16 @@
             <button class="album-slider__nav album-slider__nav--prev" type="button" data-slider-prev aria-label="Ảnh trước">&lsaquo;</button>
             <div class="album-slider__viewport">
               <div class="album-slider__track" data-slider-track>
-                <figure class="album-slide is-active"><img src="public/img3.jpg" alt="Ảnh cưới 1" loading="lazy"></figure>
+                <figure class="album-slide is-active"><img src="public/img5.jpg" alt="Ảnh cưới 1" loading="lazy"></figure>
                 <figure class="album-slide"><img src="public/img4.jpg" alt="Ảnh cưới 2" loading="lazy"></figure>
-                <figure class="album-slide"><img src="public/img5.jpg" alt="Ảnh cưới 3" loading="lazy"></figure>
                 <figure class="album-slide"><img src="public/img6.jpg" alt="Ảnh cưới 4" loading="lazy"></figure>
                 <figure class="album-slide"><img src="public/img7.jpg" alt="Ảnh cưới 5" loading="lazy"></figure>
                 <figure class="album-slide"><img src="public/img8.jpg" alt="Ảnh cưới 6" loading="lazy"></figure>
                 <figure class="album-slide"><img src="public/img9.jpg" alt="Ảnh cưới 7" loading="lazy"></figure>
                 <figure class="album-slide"><img src="public/img10.jpg" alt="Ảnh cưới 8" loading="lazy"></figure>
                 <figure class="album-slide"><img src="public/img11.jpg" alt="Ảnh cưới 9" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img3.jpg" alt="Ảnh cưới 3" loading="lazy"></figure>
+
               </div>
             </div>
             <button class="album-slider__nav album-slider__nav--next" type="button" data-slider-next aria-label="Ảnh tiếp theo">&rsaquo;</button>
@@ -230,7 +231,7 @@
 
     async function playBackgroundMusic() {
       try {
-        bgAudio.volume = 0.6;
+        bgAudio.volume = 0.28;
         await bgAudio.play();
       } catch (error) {
         // Ignore autoplay blocking and let the user start playback manually.

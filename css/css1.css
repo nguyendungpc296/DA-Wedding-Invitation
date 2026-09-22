@@ -279,8 +279,53 @@ body.invitation-open .page-shell {
   text-transform: uppercase;
 }
 
-.family-card h3 {
+.family-card {
+  text-align: center;
+}
+
+.family-card__member {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
   margin: 0;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  text-align: center;
+}
+
+.family-card__member + .family-card__member {
+  margin-top: 12px;
+}
+
+.family-card__member span {
+  color: var(--muted);
+  font-size: 0.94rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.family-card__member strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
   line-height: 1.04;
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+@media (max-width: 720px) {
+  .family-card__member {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 520px) {
+  .family-card__member {
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .family-card__member span {
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+  }
 }

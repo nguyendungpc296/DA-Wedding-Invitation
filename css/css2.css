@@ -335,10 +335,75 @@
   }
 
   .modal {
-    padding: 12px;
+    padding: 10px;
+    align-items: start;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal__dialog {
+    width: 100%;
+    max-height: calc(100vh - 20px);
+    margin: auto 0;
+    padding: 18px 16px;
+    overflow-y: auto;
+    border-radius: 22px;
+  }
+
+  .modal__close {
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.25rem;
+  }
+
+  .modal__dialog .eyebrow {
+    margin-bottom: 6px;
+    font-size: 0.66rem;
+    letter-spacing: 0.2em;
+  }
+
+  .modal__dialog h2 {
+    margin: 0;
+    padding-right: 36px;
+    font-size: clamp(1.8rem, 8vw, 2.3rem);
+    line-height: 0.98;
+  }
+
+  .gift-grid {
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .gift-card {
+    padding: 0;
   }
 
   .gift-card__qr {
-    width: min(100%, 180px);
+    width: min(100%, 152px);
+    margin-bottom: 12px;
+    border-width: 7px;
+    border-radius: 18px;
+  }
+
+  .gift-card h3 {
+    margin-bottom: 4px;
+    font-size: 1.6rem;
+  }
+
+  .gift-card p,
+  .gift-card span,
+  .gift-card strong {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .gift-card strong {
+    margin: 4px 0 2px;
+  }
+
+  .gift-card p {
+    margin: 0;
   }
 }
