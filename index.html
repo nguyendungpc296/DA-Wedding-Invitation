@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thiệp Cưới Nguyễn Dũng &amp; Vân Anh</title>
+  <meta name="description" content="Thiệp cưới Nguyễn Dũng và Vân Anh với phong thư mở đầu, album ảnh, thông tin hai bên gia đình và hộp quà mừng.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/css1.css">
+  <link rel="stylesheet" href="css/css2.css">
+  <link rel="stylesheet" href="css/css3.css">
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon" sizes="48x48">
+</head>
+<body class="invitation-hidden">
+  <audio id="bg-audio" loop preload="auto">
+    <source src="public/bg_music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-toggle" id="music-toggle" type="button" aria-label="Bật hoặc tắt nhạc nền" aria-pressed="false">
+    <span class="music-toggle__disc"></span>
+    <span class="music-toggle__text">Bật nhạc</span>
+  </button>
+
+  <div class="envelope-screen" id="envelope-screen" aria-hidden="false">
+    <div class="envelope-screen__glow envelope-screen__glow--left"></div>
+    <div class="envelope-screen__glow envelope-screen__glow--right"></div>
+    <button class="envelope" id="open-envelope" type="button" aria-label="Mở thiệp cưới">
+      <span class="envelope__wax">25.10</span>
+      <span class="envelope__flap"></span>
+      <span class="envelope__paper">
+        <span class="envelope__paper-inner">
+          <span class="envelope__eyebrow">Wedding Invitation</span>
+          <strong>Nguyễn Dũng &amp; Vân Anh</strong>
+          <span>Nhấn để mở thiệp</span>
+        </span>
+      </span>
+      <span class="envelope__body"></span>
+      <span class="envelope__shine"></span>
+    </button>
+  </div>
+
+  <div class="page-shell" id="invitation-root">
+    <header class="hero section" id="top">
+      <div class="hero__mist"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Thiệp Thành Hôn</p>
+        <h1 class="hero__title">Nguyễn Dũng <span>&amp;</span> Vân Anh</h1>
+        <p class="hero__subtitle">Trân trọng kính mời bạn cùng gia đình đến chung vui trong ngày trọng đại của chúng tôi.</p>
+
+        <div class="hero__gallery">
+          <article class="hero-card">
+            <div class="hero-card__frame">
+              <img src="public/img1.jpg" alt="Nguyễn Dũng" class="hero-card__image">
+            </div>
+          </article>
+
+          <div class="hero__centerpiece">
+            <span class="hero__date-label">Ngày cưới</span>
+            <strong>25/10/2026</strong>
+            <span>Chủ Nhật</span>
+          </div>
+
+          <article class="hero-card">
+            <div class="hero-card__frame">
+              <img src="public/img2.jpg" alt="Vân Anh" class="hero-card__image">
+            </div>
+          </article>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section family-section">
+        <div class="container family-grid">
+          <article class="card family-card">
+            <p class="family-card__label">Nhà trai</p>
+            <h5>Ông Nguyễn Văn Tuấn</h5>
+            <h5>Bà Bùi Thị Hoa</h5>
+          </article>
+
+          <article class="card family-card">
+            <p class="family-card__label">Nhà gái</p>
+            <h5>Ông Nguyễn Văn Thương</h5>
+            <h5>Bà Dương Thị Luyến</h5>
+          </article>
+        </div>
+      </section>
+
+      <section class="section event-section">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Thông tin tiệc cưới</p>
+            <h2>Hân hạnh đón tiếp tại hai gia đình</h2>
+          </div>
+
+          <div class="event-grid">
+            <article class="card event-card">
+              <p class="event-card__label">Nhà trai</p>
+              <div class="event-card__time">
+                <strong>11:30</strong>
+                <span>Chủ Nhật, 25/10/2026</span>
+              </div>
+              <p class="event-card__address">Số 1 Đường Phong Lưu, Khu Phố Hoài Đức, Phường Phong Cốc, TP Quảng Ninh</p>
+              <a class="button button--secondary" href="https://www.google.com/maps/place/1+Phong+L%C6%B0u,+Y%C3%AAn+%C4%90%E1%BB%99ng,+Phong+C%E1%BB%91c,+Qu%E1%BA%A3ng+Ninh,+Vi%E1%BB%87t+Nam/@20.8967406,106.8049615,17z/data=!3m1!4b1!4m6!3m5!1s0x314a641a21de09c9:0x84a7817629429f16!8m2!3d20.8967356!4d106.8075364!16s%2Fg%2F11pwvx4ppr?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Chỉ đường nhà trai</a>
+            </article>
+
+            <article class="card event-card">
+              <p class="event-card__label">Nhà gái</p>
+              <div class="event-card__time">
+                <strong>09:00</strong>
+                <span>Chủ Nhật, 25/10/2026</span>
+              </div>
+              <p class="event-card__address">Số 50 Khu phố Thành Công, Phường Phong Cốc, TP Quảng Ninh</p>
+              <a class="button button--secondary" href="https://www.google.com/maps/place/50+Th%C3%A0nh+C%C3%B4ng,+Phong+C%E1%BB%91c,+Qu%E1%BA%A3ng+Ninh,+Vi%E1%BB%87t+Nam/@20.930557,106.7964232,17z/data=!3m1!4b1!4m6!3m5!1s0x314a63ec15fa2c7b:0xebaaa11136038d86!8m2!3d20.930552!4d106.7989981!16s%2Fg%2F11rpk9431_?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">Chỉ đường nhà gái</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section album-section">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Album ảnh</p>
+            <h2>Những khoảnh khắc</h2>
+          </div>
+
+          <div class="album-slider card" data-slider>
+            <button class="album-slider__nav album-slider__nav--prev" type="button" data-slider-prev aria-label="Ảnh trước">&lsaquo;</button>
+            <div class="album-slider__viewport">
+              <div class="album-slider__track" data-slider-track>
+                <figure class="album-slide is-active"><img src="public/img3.jpg" alt="Ảnh cưới 1" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img4.jpg" alt="Ảnh cưới 2" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img5.jpg" alt="Ảnh cưới 3" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img6.jpg" alt="Ảnh cưới 4" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img7.jpg" alt="Ảnh cưới 5" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img8.jpg" alt="Ảnh cưới 6" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img9.jpg" alt="Ảnh cưới 7" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img10.jpg" alt="Ảnh cưới 8" loading="lazy"></figure>
+                <figure class="album-slide"><img src="public/img11.jpg" alt="Ảnh cưới 9" loading="lazy"></figure>
+              </div>
+            </div>
+            <button class="album-slider__nav album-slider__nav--next" type="button" data-slider-next aria-label="Ảnh tiếp theo">&rsaquo;</button>
+            <div class="album-slider__dots" data-slider-dots>
+              <button class="album-slider__dot is-active" type="button" data-slide-to="0" aria-label="Ảnh 1"></button>
+              <button class="album-slider__dot" type="button" data-slide-to="1" aria-label="Ảnh 2"></button>
+              <button class="album-slider__dot" type="button" data-slide-to="2" aria-label="Ảnh 3"></button>
+              <button class="album-slider__dot" type="button" data-slide-to="3" aria-label="Ảnh 4"></button>
+              <button class="album-slider__dot" type="button" data-slide-to="4" aria-label="Ảnh 5"></button>
+              <button class="album-slider__dot" type="button" data-slide-to="5" aria-label="Ảnh 6"></button>
+              <button class="album-slider__dot" type="button" data-slide-to="6" aria-label="Ảnh 7"></button>
+              <button class="album-slider__dot" type="button" data-slide-to="7" aria-label="Ảnh 8"></button>
+              <button class="album-slider__dot" type="button" data-slide-to="8" aria-label="Ảnh 9"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gift-section">
+        <div class="container gift-section__content">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Hộp quà mừng</p>
+            <h2>Gửi lời chúc theo cách riêng của bạn</h2>
+          </div>
+
+          <button class="gift-present" id="open-gift" type="button" aria-label="Mở hộp quà mừng">
+            <span class="gift-present__spark gift-present__spark--one"></span>
+            <span class="gift-present__spark gift-present__spark--two"></span>
+            <span class="gift-present__spark gift-present__spark--three"></span>
+            <span class="gift-present__lid"></span>
+            <span class="gift-present__box"></span>
+            <span class="gift-present__ribbon gift-present__ribbon--vertical"></span>
+            <span class="gift-present__ribbon gift-present__ribbon--horizontal"></span>
+            <span class="gift-present__bow"></span>
+            <span class="gift-present__text">Nhấn để mở</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="container footer__content">
+        <p>Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi.</p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal" id="gift-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog card" role="dialog" aria-modal="true" aria-labelledby="gift-title">
+      <button class="modal__close" type="button" aria-label="Đóng" data-close-modal>&times;</button>
+      <p class="eyebrow">Mừng cưới</p>
+      <h2 id="gift-title">Thông tin nhận quà</h2>
+      <div class="gift-grid">
+        <article class="gift-card">
+          <img src="public/qr1.jpg" alt="Mã QR chú rể" class="gift-card__qr">
+          <h3>Chú rể</h3>
+          <p>Techcombank</p>
+          <strong>Nguyễn Văn Dũng</strong>
+          <span>19036931293015</span>
+        </article>
+        <article class="gift-card">
+          <img src="public/qr2.jpg" alt="Mã QR cô dâu" class="gift-card__qr">
+          <h3>Cô dâu</h3>
+          <p>Vietcombank</p>
+          <strong>Nguyễn Thị Vân Anh</strong>
+          <span>0301000429227</span>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const body = document.body;
+    const bgAudio = document.getElementById('bg-audio');
+    const musicToggle = document.getElementById('music-toggle');
+    const musicToggleText = musicToggle.querySelector('.music-toggle__text');
+    const envelopeScreen = document.getElementById('envelope-screen');
+    const openEnvelope = document.getElementById('open-envelope');
+    const openGift = document.getElementById('open-gift');
+    const giftModal = document.getElementById('gift-modal');
+
+    function syncMusicButton() {
+      const isPlaying = !bgAudio.paused;
+      musicToggle.classList.toggle('is-playing', isPlaying);
+      musicToggle.setAttribute('aria-pressed', String(isPlaying));
+      musicToggleText.textContent = isPlaying ? 'Tắt nhạc' : 'Bật nhạc';
+    }
+
+    async function playBackgroundMusic() {
+      try {
+        bgAudio.volume = 0.6;
+        await bgAudio.play();
+      } catch (error) {
+        // Ignore autoplay blocking and let the user start playback manually.
+      }
+      syncMusicButton();
+    }
+
+    function setModalState(modal, isOpen) {
+      modal.classList.toggle('is-open', isOpen);
+      modal.setAttribute('aria-hidden', String(!isOpen));
+      body.classList.toggle('has-modal', isOpen);
+    }
+
+    openEnvelope.addEventListener('click', () => {
+      body.classList.add('invitation-opening');
+      window.setTimeout(() => {
+        body.classList.remove('invitation-hidden');
+        body.classList.add('invitation-open');
+      }, 380);
+      playBackgroundMusic();
+      window.setTimeout(() => {
+        envelopeScreen.setAttribute('aria-hidden', 'true');
+      }, 1200);
+    });
+
+    musicToggle.addEventListener('click', async () => {
+      if (bgAudio.paused) {
+        await playBackgroundMusic();
+        return;
+      }
+
+      bgAudio.pause();
+      syncMusicButton();
+    });
+
+    openGift.addEventListener('click', () => {
+      setModalState(giftModal, true);
+    });
+
+    document.querySelectorAll('[data-close-modal]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        if (modal) setModalState(modal, false);
+      });
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && giftModal.classList.contains('is-open')) {
+        setModalState(giftModal, false);
+      }
+    });
+
+    const sliderRoot = document.querySelector('[data-slider]');
+
+    if (sliderRoot) {
+      const sliderTrack = sliderRoot.querySelector('[data-slider-track]');
+      const sliderSlides = Array.from(sliderRoot.querySelectorAll('.album-slide'));
+      const sliderDots = Array.from(sliderRoot.querySelectorAll('[data-slide-to]'));
+      const prevButton = sliderRoot.querySelector('[data-slider-prev]');
+      const nextButton = sliderRoot.querySelector('[data-slider-next]');
+      let currentIndex = 0;
+
+      function renderSlider(index) {
+        currentIndex = (index + sliderSlides.length) % sliderSlides.length;
+        sliderTrack.style.transform = 'translateX(-' + currentIndex * 100 + '%)';
+
+        sliderSlides.forEach((slide, slideIndex) => {
+          slide.classList.toggle('is-active', slideIndex === currentIndex);
+        });
+
+        sliderDots.forEach((dot, dotIndex) => {
+          dot.classList.toggle('is-active', dotIndex === currentIndex);
+        });
+      }
+
+      prevButton.addEventListener('click', () => renderSlider(currentIndex - 1));
+      nextButton.addEventListener('click', () => renderSlider(currentIndex + 1));
+
+      sliderDots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+          renderSlider(Number(dot.dataset.slideTo));
+        });
+      });
+
+      renderSlider(0);
+    }
+
+    syncMusicButton();
+  </script>
+</body>
+</html>
